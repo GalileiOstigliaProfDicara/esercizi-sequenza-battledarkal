@@ -1,0 +1,21 @@
+#include<stdio.h>;
+
+int main() {
+  int prezzo, sconto, scontato, effettuato;
+  printf("inserisci il prezzo e la percentuale di sconto: ");
+ scanf("%d", &prezzo); 
+   scanf("%d", &sconto);
+
+   printf("il prezzo pieno è %d\n", prezzo);
+
+  scontato = prezzo * sconto / 100;
+
+  printf("i soldi risparmiati sono %d\n", scontato);
+ 
+   effettuato = prezzo - scontato;
+
+   printf("il prezzo con lo sconto è di %d\n", effettuato);
+
+   return 0;
+   
+}

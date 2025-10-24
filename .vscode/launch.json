@@ -1,0 +1,49 @@
+{
+    // Usare IntelliSense per informazioni sui possibili attributi.
+    // Al passaggio del mouse vengono visualizzate le descrizioni degli attributi esistenti.
+    // Per altre informazioni, visitare: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "(gdb) Associa",
+            "type": "cppdbg",
+            "request": "attach",
+            "program": "immissione del nome del programma, ad esempio ${workspaceFolder}/a.out",
+            "MIMode": "gdb",
+            "setupCommands": [
+                {
+                    "description": "Abilita la riformattazione per gdb",
+                    "text": "-enable-pretty-printing",
+                    "ignoreFailures": true
+                },
+                {
+                    "description": "Imposta Versione Disassembly su Intel",
+                    "text": "-gdb-set disassembly-flavor intel",
+                    "ignoreFailures": true
+                }
+            ]
+        }
+
+    ]
+}
+#include<stdio.h>;
+
+int main() {
+  int prezzo, sconto, scontato, effettuato;
+  printf("inserisci il prezzo e la percentuale di sconto: ");
+ scanf("%d", &prezzo); 
+   scanf("%d", &sconto);
+
+   printf("il prezzo pieno è %d\n", prezzo);
+
+  scontato = prezzo * sconto / 100;
+
+  printf("i soldi risparmiati sono %d\n", scontato);
+ 
+   effettuato = prezzo - scontato;
+
+   printf("il prezzo con lo sconto è di %d\n", effettuato);
+
+   return 0;
+   
+}
