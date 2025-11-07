@@ -2,7 +2,7 @@
 
 int main() {
    
-   int a, b, c;
+   int a, b, c, temp;
 
    printf("inserisci le tre variabili a, b, c:  ");
    scanf("%d", &a);
