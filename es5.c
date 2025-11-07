@@ -2,14 +2,19 @@
 
 int main() {
    
-    int a, b, c;
+   int a, b, c;
 
-    printf("inserisci le tre variabili a, b, c:  ");
-    scanf("%d", &a);
-    scanf("%d", &b);
-    scanf("%d", &c);
+   printf("inserisci le tre variabili a, b, c:  ");
+   scanf("%d", &a);
+   scanf("%d", &b);
+   scanf("%d", &c);
 
-// non so come fare delle variabili temporanee per scambiare i valori-
+   int temp = b;
+   b = a;
+   a = c;
+   c = temp
 
-    return 0;
+   printf("a = %d, b = %d, c = %d/n", a, b, c);
+
+   return 0;
 }
